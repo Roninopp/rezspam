@@ -91,7 +91,7 @@ async def SpamX_(SpamX: Client, message: Message):
 
     spamx_reply += f"**SpamX Version:** `{__version__}` \n"
     spamx_reply += f"**Python Version:** `{platform.python_version()}` \n"
-    spamx_reply += f"**pyRiZoeLX Version:** `{rizoelx_vr}` \n"
+    spamx_reply += f"**pyROninx Version:** `{rizoelx_vr}` \n"
     spamx_reply += f"**Pyrogram Version:** `{pyrogram_vr}` \n\n"
     
     spamx_reply += f"**Your Name:** {user.first_name} \n"
@@ -106,8 +106,8 @@ async def SpamX_(SpamX: Client, message: Message):
        spamx_reply += f"**Total Sudos:** `{users_db.sudo_count()}` \n"
        spamx_reply += f"**Total Gbanned users:** `{gban_db.gban_count()}` \n"
     spamx_reply += "<=======================> \n\n"
-    spamx_reply += "**Source Code:** [BAAP](https://t.me/dushmanxronin) \n\n"
-    spamx_reply += "**© @RiZoeLX** || Support: @team_samurai_network"
+    spamx_reply += "**Papa:** [BAAP](https://t.me/dushmanxronin) \n\n"
+    spamx_reply += "**© @Dushmanxronin** || Support: @team_samurai_network"
     
     try:
        await info.edit_text(spamx_reply, disable_web_page_preview=True)
