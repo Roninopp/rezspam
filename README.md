@@ -92,6 +92,5 @@ SpamX is licensed under [GNU Affero General Public License](https://www.gnu.org/
 <h3>Credits</h3>
 
   - <b> [RiZoeL](https://github.com/MrRizoel) : Dev/creator of SpamX </b> 
-  - <b> [Pyrogram](https://github.com/pyrogram/pyrogram) : Python Library used in SpamX
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Roninopp/rezspam)
+  - <b> [Pyrogram](https://github.com/pyrogram/pyrogram) : Python Libra)](https://heroku.com/deploy?template=https://github.com/Roninopp/rezspam)
+https://dashboard.heroku.com/new-app?template=https://github.com/Roninopp/rezspam
