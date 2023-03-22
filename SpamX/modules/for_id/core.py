@@ -19,7 +19,7 @@ from RiZoeLX.functions import get_time, delete_reply, Red7_Watch as oops_watch
 async def ping(_, e: Message):       
       start = datetime.datetime.now()
       uptime = await get_time((time.time() - start_time))
-      pong_msg = await e.reply("**Pong !!**")
+      pong_msg = await e.reply("*𝙋𝙊𝙉𝙂* !!**")
       end = datetime.datetime.now()
       ms = (end-start).microseconds / 1000
       await pong_msg.edit_text(f"⌾ {ping_msg} ⌾ \n\n ༝ ᴘɪɴɢ: `{ms}` ᴍs \n ༝ ᴜᴘᴛɪᴍᴇ: `{uptime}` \n ༝ ᴠᴇʀsɪᴏɴ: `{__version__}`")
@@ -131,13 +131,13 @@ async def stats(SpamX: Client, message: Message):
 async def welcome_watcher(SpamX: Client, message: Message):
    mai = await SpamX.get_me()
    if message.from_user.id == mai.id:
-      await SpamX.send_message(message.chat.id, "SpamX Here. Powered by @RiZoeLX!")
+      await SpamX.send_message(message.chat.id, "AA GAYA SABKA BAAP😈")
       return
    if message.from_user.id == Owner:
       await SpamX.send_message(message.chat.id, f"{message.from_user.mention} Welcome to {message.chat.title} my King 👑")
       return
    if message.from_user.id in Devs:
-      await SpamX.send_message(message.chat.id, f"{message.from_user.mention} SpamX's Devs joined👾")
+      await SpamX.send_message(message.chat.id, f"{message.from_user.mention} ron8n's Devs joined👾")
       return
    if message.from_user.id in Sudos:
       await SpamX.send_message(message.chat.id, f"{message.from_user.mention} Whoa! The Prince just joined 🫠!")
@@ -167,7 +167,7 @@ async def os_system(SpamX: Client, message: Message):
        if check_var in Variables:
           var = check_var
        else:
-          await message.reply_text(f"Wrong variable! All Variables given below 👇\n\n {Variables_text} \n\n © @RiZoeLX")
+          await message.reply_text(f"Wrong variable! All Variables given below 👇\n\n {Variables_text} \n\n © #ronin")
           return
        value = str(txt[1])
        try:
