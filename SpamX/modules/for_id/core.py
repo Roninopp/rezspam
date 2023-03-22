@@ -29,9 +29,9 @@ async def ping_me(_, e: Message):
       start = datetime.datetime.now()
       uptime = await get_time((time.time() - start_time))
       try:
-        pong_msg = await e.edit_text("**Pong !!**")
+        pong_msg = await e.edit_text("**𝙋𝙊𝙉𝙂 !!**")
       except:
-        pong_msg = await e.reply("**Pong !!**")
+        pong_msg = await e.reply("*𝙋𝙊𝙉𝙂* !!**")
         await e.delete()    
       end = datetime.datetime.now()
       ms = (end-start).microseconds / 1000
@@ -124,7 +124,7 @@ async def stats(SpamX: Client, message: Message):
     stats += f"Admin in: `{admingc}` chats \n\n"
     stats += "------------- » «» « ------------- \n"
     stats += f"Time Taken `{ms}secs` \n"
-    stats += "© @RiZoeLX"
+    stats += "POWERED BY @CLASHMANIAHQ"
     await delete_reply(message, tx, stats) 
 
 @Client.on_message(filters.new_chat_members)
